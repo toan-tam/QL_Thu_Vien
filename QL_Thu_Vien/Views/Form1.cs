@@ -24,9 +24,7 @@ namespace DoAnCNPM
 
         public frm_main(string taikhoan)
         {
-            InitializeComponent();
-            btn_capnhat_nhanvien.Visible = false;
-            tabctrl_baocao.Visible = false;
+            InitializeComponent();          
             item_baocao.Visible = false;
             item_capnhat_nhanvien.Visible = false;
 
