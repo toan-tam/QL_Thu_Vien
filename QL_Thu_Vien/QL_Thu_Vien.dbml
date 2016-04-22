@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_Thu_Vien" Class="QL_Thu_VienDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TOANTAM\SQLEXPRESS;Initial Catalog=QL_Thu_Vien;Integrated Security=True" SettingsObjectName="DoAnCNPM.Properties.Settings" SettingsPropertyName="QL_Thu_VienConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_chitietphieu" Member="tbl_chitietphieus">
+    <Type Name="tbl_chitietphieu">
+      <Column Name="sophieumuon" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="masach" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="trangthaisach" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_phieumuon_tra_tbl_chitietphieu" Member="tbl_phieumuon_tra" ThisKey="sophieumuon" OtherKey="sophieumuon" Type="tbl_phieumuon_tra" IsForeignKey="true" />
+      <Association Name="tbl_sach_tbl_chitietphieu" Member="tbl_sach" ThisKey="masach" OtherKey="masach" Type="tbl_sach" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_xuphat" Member="tbl_xuphats">
+    <Type Name="tbl_xuphat">
+      <Column Name="maphat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="loaiphat" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="giatien" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_docgia" Member="tbl_docgias">
+    <Type Name="tbl_docgia">
+      <Column Name="madg" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tendg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ngaysinh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gioitinh" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="lop" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_docgia_tbl_phieumuon_tra" Member="tbl_phieumuon_tras" ThisKey="madg" OtherKey="madg" Type="tbl_phieumuon_tra" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_linhvuc" Member="tbl_linhvucs">
+    <Type Name="tbl_linhvuc">
+      <Column Name="malinhvuc" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tenlinhvuc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_linhvuc_tbl_sach" Member="tbl_saches" ThisKey="malinhvuc" OtherKey="malv" Type="tbl_sach" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_nxb" Member="tbl_nxbs">
+    <Type Name="tbl_nxb">
+      <Column Name="manxb" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tennxb" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Association Name="tbl_nxb_tbl_sach" Member="tbl_saches" ThisKey="manxb" OtherKey="manxb" Type="tbl_sach" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_nhanvien" Member="tbl_nhanviens">
+    <Type Name="tbl_nhanvien">
+      <Column Name="manv" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tennv" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dienthoai" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="chucvu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="tuoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="taikhoan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="matkhau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_nhanvien_tbl_phieumuon_tra" Member="tbl_phieumuon_tras" ThisKey="manv" OtherKey="manv" Type="tbl_phieumuon_tra" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_phieumuon_tra" Member="tbl_phieumuon_tras">
+    <Type Name="tbl_phieumuon_tra">
+      <Column Name="sophieumuon" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="madg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="manv" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaymuon" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ngaytra" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="xacnhantra" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ghichu" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="tbl_phieumuon_tra_tbl_chitietphieu" Member="tbl_chitietphieus" ThisKey="sophieumuon" OtherKey="sophieumuon" Type="tbl_chitietphieu" />
+      <Association Name="tbl_docgia_tbl_phieumuon_tra" Member="tbl_docgia" ThisKey="madg" OtherKey="madg" Type="tbl_docgia" IsForeignKey="true" />
+      <Association Name="tbl_nhanvien_tbl_phieumuon_tra" Member="tbl_nhanvien" ThisKey="manv" OtherKey="manv" Type="tbl_nhanvien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sach" Member="tbl_saches">
+    <Type Name="tbl_sach">
+      <Column Name="masach" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tensach" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="matg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="manxb" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="malv" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sotrang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaynhap" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_sach_tbl_chitietphieu" Member="tbl_chitietphieus" ThisKey="masach" OtherKey="masach" Type="tbl_chitietphieu" />
+      <Association Name="tbl_sach_tbl_sach_tacgia" Member="tbl_sach_tacgias" ThisKey="masach" OtherKey="masach" Type="tbl_sach_tacgia" />
+      <Association Name="tbl_linhvuc_tbl_sach" Member="tbl_linhvuc" ThisKey="malv" OtherKey="malinhvuc" Type="tbl_linhvuc" IsForeignKey="true" />
+      <Association Name="tbl_nxb_tbl_sach" Member="tbl_nxb" ThisKey="manxb" OtherKey="manxb" Type="tbl_nxb" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sach_tacgia" Member="tbl_sach_tacgias">
+    <Type Name="tbl_sach_tacgia">
+      <Column Name="masach" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matg" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="tbl_sach_tbl_sach_tacgia" Member="tbl_sach" ThisKey="masach" OtherKey="masach" Type="tbl_sach" IsForeignKey="true" />
+      <Association Name="tbl_tacgia_tbl_sach_tacgia" Member="tbl_tacgia" ThisKey="matg" OtherKey="matg" Type="tbl_tacgia" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_tacgia" Member="tbl_tacgias">
+    <Type Name="tbl_tacgia">
+      <Column Name="matg" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tentg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gioitinh" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_tacgia_tbl_sach_tacgia" Member="tbl_sach_tacgias" ThisKey="matg" OtherKey="matg" Type="tbl_sach_tacgia" />
+    </Type>
+  </Table>
+</Database>

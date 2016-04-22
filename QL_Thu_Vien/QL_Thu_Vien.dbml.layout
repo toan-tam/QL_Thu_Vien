@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 15.875" name="QL_Thu_Vien">
+  <DataContextMoniker Name="/QL_Thu_VienDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bdffb43e-dbc5-4331-8258-e0338fb03bf8" absoluteBounds="6.25, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_chitietphieu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a75c5cc-dc77-4c14-abb5-9168df3cf623" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="539891ce-9d28-4e76-9618-2b74c4a129a0" absoluteBounds="6.75, 6.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_xuphat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c481768-f2c9-4f55-ba48-213a06fa6c83" absoluteBounds="6.765, 6.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d33ccf17-fc1d-4ad6-ba71-a8929299c307" absoluteBounds="0.75, 10.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_docgia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c8c2f33-4dd8-43df-9c9e-c746c213a1d3" absoluteBounds="0.765, 10.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2f96713-ac15-472d-bae2-93d68fae80ed" absoluteBounds="0.75, 3.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_linhvuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c5bb0be-623b-418c-9b79-e3d882d43a6a" absoluteBounds="0.765, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa11c4b5-21d4-4654-8caf-8bc0dd08cce5" absoluteBounds="0.75, 7.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_nxb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81c7bd36-14c1-4109-a29c-cdc607da9a7a" absoluteBounds="0.765, 8.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18f45d9a-336c-4de0-ad1c-ba9c7b6d9749" absoluteBounds="0.75, 13.125, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_nhanvien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54404348-4ec2-4004-8aa8-8644931a91c6" absoluteBounds="0.765, 13.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e3e2123-bab6-4956-a44d-0ecc65d3c114" absoluteBounds="3.5, 11.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_phieumuon_tra" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ac7b9b1-eb10-4e76-bdf9-004841502cc9" absoluteBounds="3.515, 12.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e854678-502d-450d-a3ff-449bf46f5f0b" absoluteBounds="3.5, 3.25, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_sach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97ca3cf8-91fe-4054-9f60-ffc428567c1a" absoluteBounds="3.515, 3.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd303120-2d90-455b-a553-def4c3ad0be9" absoluteBounds="6.25, 3.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_sach_tacgia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af416175-7819-4e07-a7b3-a2cccb07ba9b" absoluteBounds="6.265, 4.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47708329-b35d-433c-8442-a3432e66b686" absoluteBounds="3.5, 7.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QL_Thu_VienDataContext/tbl_tacgia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1475d8b1-4153-4f50-b487-99f03a486ef5" absoluteBounds="3.515, 8.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 11.875); (5.875 : 11.5); (5.875 : 1.44314697265625); (6.25 : 1.44314697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_phieumuon_tra/tbl_phieumuon_tra_tbl_chitietphieu" />
+      <nodes>
+        <classShapeMoniker Id="5e3e2123-bab6-4956-a44d-0ecc65d3c114" />
+        <classShapeMoniker Id="bdffb43e-dbc5-4331-8258-e0338fb03bf8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.1402498372396); (3.5 : 12.1402498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_docgia/tbl_docgia_tbl_phieumuon_tra" />
+      <nodes>
+        <classShapeMoniker Id="d33ccf17-fc1d-4ad6-ba71-a8929299c307" />
+        <classShapeMoniker Id="5e3e2123-bab6-4956-a44d-0ecc65d3c114" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.5777498372396); (3.5 : 13.5777498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_nhanvien/tbl_nhanvien_tbl_phieumuon_tra" />
+      <nodes>
+        <classShapeMoniker Id="18f45d9a-336c-4de0-ad1c-ba9c7b6d9749" />
+        <classShapeMoniker Id="5e3e2123-bab6-4956-a44d-0ecc65d3c114" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.25); (4.5 : 1.82097295898437); (5.79166666666667 : 1.82097295898437 : JumpStart); (5.95833333333333 : 1.82097295898437 : JumpEnd); (6.25 : 1.82097295898437)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_sach/tbl_sach_tbl_chitietphieu" />
+      <nodes>
+        <classShapeMoniker Id="2e854678-502d-450d-a3ff-449bf46f5f0b" />
+        <classShapeMoniker Id="bdffb43e-dbc5-4331-8258-e0338fb03bf8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.47199625651042); (3.04166666666667 : 4.47199625651042 : JumpStart); (3.20833333333333 : 4.47199625651042 : JumpEnd); (3.5 : 4.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_linhvuc/tbl_linhvuc_tbl_sach" />
+      <nodes>
+        <classShapeMoniker Id="c2f96713-ac15-472d-bae2-93d68fae80ed" />
+        <classShapeMoniker Id="2e854678-502d-450d-a3ff-449bf46f5f0b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.62621330413662); (3.125 : 7.25121330413662); (3.125 : 3.82974612825521); (3.5 : 3.82974612825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_nxb/tbl_nxb_tbl_sach" />
+      <nodes>
+        <classShapeMoniker Id="fa11c4b5-21d4-4654-8caf-8bc0dd08cce5" />
+        <classShapeMoniker Id="2e854678-502d-450d-a3ff-449bf46f5f0b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.47199625651042); (5.79166666666667 : 4.47199625651042 : JumpStart); (5.95833333333333 : 4.47199625651042 : JumpEnd); (6.25 : 4.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_sach/tbl_sach_tbl_sach_tacgia" />
+      <nodes>
+        <classShapeMoniker Id="2e854678-502d-450d-a3ff-449bf46f5f0b" />
+        <classShapeMoniker Id="cd303120-2d90-455b-a553-def4c3ad0be9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.57619466145833); (5.79166666666667 : 8.57619466145833 : JumpStart); (5.95833333333333 : 8.57619466145833 : JumpEnd); (6.46875 : 8.57619466145833); (6.46875 : 5.06899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QL_Thu_VienDataContext/tbl_tacgia/tbl_tacgia_tbl_sach_tacgia" />
+      <nodes>
+        <classShapeMoniker Id="47708329-b35d-433c-8442-a3432e66b686" />
+        <classShapeMoniker Id="cd303120-2d90-455b-a553-def4c3ad0be9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
