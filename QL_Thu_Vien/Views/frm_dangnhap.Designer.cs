@@ -36,8 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_dangnhap = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_mk
@@ -45,6 +43,7 @@
             this.txt_mk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mk.Location = new System.Drawing.Point(160, 97);
             this.txt_mk.Name = "txt_mk";
+            this.txt_mk.PasswordChar = '*';
             this.txt_mk.Size = new System.Drawing.Size(192, 29);
             this.txt_mk.TabIndex = 2;
             // 
@@ -119,31 +118,11 @@
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 147);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "admin - admin";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(36, 166);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "nv1 - nv1";
-            // 
             // frm_dangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 241);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_dangnhap);
             this.Controls.Add(this.txt_mk);
@@ -169,7 +148,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_dangnhap;
         private System.Windows.Forms.Button btn_thoat;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
     }
 }

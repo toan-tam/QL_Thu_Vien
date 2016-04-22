@@ -167,7 +167,7 @@
             // 
             this.item_timkiem_sach.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.item_timkiem_sach.Name = "item_timkiem_sach";
-            this.item_timkiem_sach.Size = new System.Drawing.Size(121, 22);
+            this.item_timkiem_sach.Size = new System.Drawing.Size(152, 22);
             this.item_timkiem_sach.Text = "Sách";
             this.item_timkiem_sach.Click += new System.EventHandler(this.btn_timkiem_sach_Click);
             // 
@@ -175,7 +175,7 @@
             // 
             this.item_timkiem_docgia.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.item_timkiem_docgia.Name = "item_timkiem_docgia";
-            this.item_timkiem_docgia.Size = new System.Drawing.Size(121, 22);
+            this.item_timkiem_docgia.Size = new System.Drawing.Size(152, 22);
             this.item_timkiem_docgia.Text = "Độc giả";
             this.item_timkiem_docgia.Click += new System.EventHandler(this.btn_timkiem_docgia_Click);
             // 
@@ -236,6 +236,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.tabctrl_baocao);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox2);

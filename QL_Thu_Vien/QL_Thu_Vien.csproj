@@ -55,10 +55,10 @@
     <Compile Include="Controllers\phieumuontra_ctrl.cs" />
     <Compile Include="Controllers\sach_ctrl.cs" />
     <Compile Include="Controllers\tacgia_ctrl.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\chitietphieu_ett.cs" />
@@ -168,7 +168,7 @@
     <Compile Include="Views\sub_frm_them_soluongsach.Designer.cs">
       <DependentUpon>sub_frm_them_soluongsach.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

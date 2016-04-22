@@ -17,6 +17,9 @@ namespace DoAnCNPM
         public frm_main()
         {
             InitializeComponent();
+
+            frm_muon_tra_sach temp = new frm_muon_tra_sach();
+            Utils.add_form_to_panel(temp, panel1);
         }
 
         public frm_main(string taikhoan)
@@ -26,6 +29,9 @@ namespace DoAnCNPM
             tabctrl_baocao.Visible = false;
             item_baocao.Visible = false;
             item_capnhat_nhanvien.Visible = false;
+
+            frm_muon_tra_sach temp = new frm_muon_tra_sach();
+            Utils.add_form_to_panel(temp, panel1);
         }
 
         private void item_thoat_Click(object sender, EventArgs e)

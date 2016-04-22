@@ -17,7 +17,6 @@ namespace DoAnCNPM.Views
         public frm_dangnhap()
         {
             InitializeComponent();
-            txt_mk.ForeColor = Color.White;
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)
